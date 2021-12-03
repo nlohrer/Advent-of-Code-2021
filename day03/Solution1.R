@@ -5,7 +5,7 @@ bitVectorToDecimal <- function(vec) {
   return(sum(vec * powerVec))
 }
 
-gammaBool <- sapply(data, sum) < nrow(data) / 2
+gammaBool <- sapply(data, sum) <= nrow(data) / 2
 gammaBin <- as.integer(gammaBool)
 epsilonBin <- as.integer(!gammaBool)
 
