@@ -23,12 +23,11 @@ findRating <- function(df, most) {
       
     }
     
-    myData <- myData[myData[,i] == currentDigit, ]
+    myData <- myData[myData[,i] == currentDigit,]
     toReturn[i] <- currentDigit
   }
   
   return(toReturn)
-  return(myData[1])
 }
 
 oxyRating <- bitVectorToDecimal(findRating(data, T))
